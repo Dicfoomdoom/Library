@@ -580,9 +580,6 @@ function Group:AddToggle(name, callback)
 		callback(isToggled)
 	end
 	
-	toggleBackground.MouseButton1Click:Connect(toggleFunc)
-	toggleLabel.MouseButton1Click:Connect(toggleFunc)
-	
 	toggleObject.Frame = toggleFrame
 	toggleObject.Value = isToggled
 	toggleObject.Toggle = function()
